@@ -1,18 +1,3 @@
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav-links > li {
-    padding: 10px;
-}
-
-.nav-img {
-    width: 60px;
+.font-test {
+    font-family: 'Inter', sans-serif;
 }
