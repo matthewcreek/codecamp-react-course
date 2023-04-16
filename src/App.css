@@ -1,71 +1,61 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #282d35;
+    font-family: Inter;
+    color: #ffd6d6;
+    width: 300px;
+    background-color: black;
+    display: flex;
+    margin: auto;
 }
 
-nav {
+.about--img {
+    width: 300px;
+}
+
+
+div {
+    background-color: #2e0d0d;
+    padding: 0;
+    
+}
+
+.int--list {
     display: flex;
     align-items: center;
-    background-color: #21222A;
-    height: 90px;
-    padding: 30px 25px;
+ }
+
+.int--list > li::marker {
+    color: #b54343;
+
+}
+.int--list > li {
+    padding: 3px;
 }
 
-.nav--logo_text, .nav--title {
-    margin: 0;
+.info {
+    display: flexbox;
+    margin: auto;
+    align-items: center;
+    
 }
 
-.nav--logo_text {
-    margin-right: auto;
-    color: #61dafb;
-    font-weight: 700;
-    font-size: 22px;
-}
-
-.nav--title {
-    color: #deebf8;
-    font-weight: 600;
-}
-
-.nav-img {
-    height: 30px;
-    margin-right: 7px;
-}
-
-main {
-    padding: 57px 27px; 
+.info--name {
     color: white;
-    background-image: url('../src/images/reactlogo.png');
-    background-size: 300px;
-    background-repeat: no-repeat;
-    background-position: 150% 75%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.main--title {
-    margin: 0;
-    letter-spacing: -0.05em;
-    font-family: Inter;
-    font-size: 39.06px;
-    line-height: 47px;
-
+.info--button {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
 }
 
-.main--list {
-    margin-top: 46px;
-    max-width: 400px;
+.info--web {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.main--list > li {
-    line-height: 19px;
-    padding-block: 10px;
-}
-
-.main--list > li::marker {
-    font-size: 1.4rem;
-    color:#61dafb
+.info--title {
+    display: flex;
+    justify-content: space-evenly;
 }
