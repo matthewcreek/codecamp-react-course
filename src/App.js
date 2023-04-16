@@ -1,49 +1,32 @@
 import React from "react";
 
+import Joke from "./components/Joke";
 
-import Navbar from "./components/Navbar.js";
-import Hero from './components/Hero.js';
-import Card from "./components/Card.js";
-import Test from "./components/Test.js";
-import Contact from "./components/Contact.js";
-
-import cat1 from './images/cat1.jpg';
-import cat2 from './images/cat2.jpg';
-import cat3 from './images/image3.png';
-import cat4 from './images/cat4.jpg';
 
 
 export default function App() {
     return (
-        <div className="contacts">
-            {/* <Test /> */}
-            {/* <Navbar /> */}
-            {/* <Hero /> */}
-            {/* <Card /> */}
-            <Contact 
-                img={cat1}
-                name='Mr. Whiskerson'
-                phone='(212) 555-1234'
-                email='mr.whiskaz@catnap.meow'
-            />
-            <Contact 
-                img={cat2}
-                name="Fluffykins"
-                phone="(212) 555-2345"
-                email="fluff@me.com"
-            />
-            <Contact 
-                img={cat3}
-                name="Felix"
-                phone="(212) 555-4567"
-                email="thecat@hotmail.com"
-            />
-            <Contact 
-                img={cat4}
-                name="Pumpkin"
-                phone="(0800) CAT KING"
-                email="pumpkin@scrimba.com"
-            />
+        <div>
+           <Joke 
+                setup='I got my daughter a fridge for her birthday'
+                punchline="I can't wait to see her face light up when she opens it."
+           />
+           <Joke 
+                setup='How did the hacker escape the police?'
+                punchline='He just ransomware!'
+           />
+           <Joke 
+                setup="Why don't pirates travel on mountain roads?"
+                punchline='Scurvy.'
+           />
+           <Joke 
+                setup='Why do bees stay in the hive in the winter?'
+                punchline='Swarm.'
+           />
+           <Joke 
+                setup="What's the best thing about Switzerland?"
+                punchline="I don't know, but the flag is a big plus!"
+           />
         </div>
         
     )
