@@ -1,61 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Inter;
-    color: #ffd6d6;
-    width: 300px;
-    background-color: black;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav--logo {
+    max-width: 100px;
+}
+
+nav {
     display: flex;
-    margin: auto;
+    height: 70px;
+    padding: 20px 36px;
+    background: #FFFFFF;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-.about--img {
-    width: 300px;
+.gray {
+    color: gray;
 }
 
-
-div {
-    background-color: #2e0d0d;
-    padding: 0;
-    
+.bold {
+    font-weight: bold;
 }
 
-.int--list {
+section {
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero--photo {
+    max-width: 400px;
+    align-self: center;
+}
+
+.hero--photo > img {
+    width: 396px;
+}
+
+.hero--content {
+    padding-left: 40px;
+}
+
+.hero--content > h1 {
+    margin-bottom: 16px;
+    max-width: 350px;
+}
+
+.hero--content > p {
+    margin-top: 0;
+    max-width: 320px;
+}
+
+.card {
+    width: 175px;
+    font-size: 12pt;
+}
+.card--img {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.card--stats {
     display: flex;
     align-items: center;
- }
-
-.int--list > li::marker {
-    color: #b54343;
-
-}
-.int--list > li {
-    padding: 3px;
 }
 
-.info {
-    display: flexbox;
-    margin: auto;
-    align-items: center;
-    
-}
-
-.info--name {
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.info--button {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 10px;
-}
-
-.info--web {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.info--title {
-    display: flex;
-    justify-content: space-evenly;
+.card--star {
+    width: 14px;
+    height: 14px;
 }

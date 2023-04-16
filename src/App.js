@@ -1,18 +1,17 @@
 import React from "react";
 
-import Info from './components/Info';
-import About from './components/About';
-import Interests from './components/Interests';
-import Footer from './components/Footer';
+
+import Navbar from "./components/Navbar.js";
+import Hero from './components/Hero.js';
+import Card from "./components/Card.js";
 
 
 export default function App() {
     return (
-        <div className="container">
-            <Info />
-            <About />
-            <Interests />
-            <Footer />
+        <div>
+            <Navbar />
+            {/* <Hero /> */}
+            <Card />
         </div>
         
     )
