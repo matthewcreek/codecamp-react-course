@@ -5,6 +5,7 @@ import Headshot3 from '../images/image3.png';
 import Star from '../images/red-star.png';
 
 export default function Card() {
+
     return (
         <div className="card">
             <img src={Headshot3} className="card--img"/>
