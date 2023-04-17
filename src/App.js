@@ -11,7 +11,7 @@ export default function App() {
     const cardElements = cardData.map(card => {
         return (
             <Card 
-                id={card.id}
+                key = {card.id}
                 title={card.title}
                 description={card.description}
                 price={card.price}
