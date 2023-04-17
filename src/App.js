@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar.js";
 import Hero from './components/Hero.js';
 import Card from "./components/Card.js";
 
-import headshot3 from './images/image3.png';
+import headshot3 from './images/katie-zaferes.png';
 
 export default function App() {
     return (

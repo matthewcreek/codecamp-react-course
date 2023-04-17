@@ -1,6 +1,6 @@
 import React from "react";
 
-import Grid from '../images/mountain.png'
+import Grid from '../images/photo-grid.png'
 
 export default function Hero() {
     return (

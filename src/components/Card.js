@@ -2,7 +2,7 @@ import React from "react";
 
 
 // import Headshot3 from '../images/image3.png';
-import Star from '../images/red-star.png';
+import Star from '../images/star.png';
 
 export default function Card(props) {
     return (
