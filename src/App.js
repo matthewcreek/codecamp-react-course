@@ -12,10 +12,11 @@ import bike from './images/mountain-bike.png'
 import wedding from './images/wedding-photography.png'
 
 export default function App() {
-
-    const cardElements = cardData.map(card => {
+    const imgArr = [katie,bike,wedding]
+    const cardElements = cardData.map((card, index) => {
         return (
             <Card 
+                coverPhoto = {imgArr[index]}
                 key = {card.id}
                 {...card}
             />
