@@ -1,21 +1,13 @@
-import React from "react";
-
-import Joke from "./components/Joke";
-import jokesData from "./jokeData";
+import React, { useState } from "react";
 
 
 
 export default function App() {
-    const jokeElements = jokesData.map(joke => {
-        return <Joke 
-            setup = {joke.setup}
-            punchline={joke.punchline}
-        />
-    })
-
+    const [messages, setMessages] = useState(['a','b'])
+    
     return (
         <div>
-           {jokeElements}
+           {(messages.length > 0) && <h1>You have {messages.length} unread messages!</h1>}
         </div>
         
     )
