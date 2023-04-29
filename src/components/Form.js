@@ -4,14 +4,15 @@ export default function Form() {
 
     const [formData, setFormData] = useState({
         firstName: '',
-        lastName: ''
+        lastName: '',
+        email: ''
     });
 
     function handleChange(event) {
         setFormData(prevFormData => {
             return {
                 ...prevFormData,
-                [event.target.name]: [event.target.value]
+                [event.target.name]: event.target.value
             }
         })
     }
@@ -27,11 +28,16 @@ export default function Form() {
                 placeholder="First Name"
                 onChange={handleChange}
             />
-            <br></br>
             <input
                 type="text"
                 name="lastName"
                 placeholder="Last Name"
+                onChange={handleChange}
+            />
+            <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
                 onChange={handleChange}
             />
         </form>
