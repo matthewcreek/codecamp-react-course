@@ -1,8 +1,13 @@
-body {
-    font-family: Poppins;
+* {
+    box-sizing: border-box;
 }
 
-.joke {
+body {
+    font-family: "Karla", sans-serif;
+    width: 25rem;
+}
+
+/* .joke {
     border: 5px;
     border-style: double;
     border-radius: 5px;
@@ -15,4 +20,4 @@ body {
 
 .joke > h1 {
     align-self: center;
-}
+} */
