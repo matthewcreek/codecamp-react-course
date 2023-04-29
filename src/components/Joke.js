@@ -11,7 +11,7 @@ export default function Joke({setup, punchline}) {
     return (
         <div className="joke">
             <h1>{setup}</h1>
-            <button onClick={handleClick}>Punchline</button>
+            <button onClick={handleClick}>{!isShown ? 'Show Punchline' : 'Hide Punchline'}</button>
             {isShown && <h3>{punchline}</h3>}
         </div>
     )
