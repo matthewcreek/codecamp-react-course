@@ -1,4 +1,4 @@
-export default [
+ const jokeData = [
     {
         "setup": 'I got my daughter a fridge for her birthday',
         "punchline": "I can't wait to see her face light up when she opens it."
@@ -20,3 +20,5 @@ export default [
         "punchline": "I don't know, but the flag is a big plus!"
     }
 ]
+
+export default jokeData;
