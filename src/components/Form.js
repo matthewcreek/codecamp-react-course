@@ -8,7 +8,8 @@ export default function Form() {
         email: '',
         comments: '',
         isFriendly: true,
-        employment: ''
+        employment: '',
+        favColor: ''
     });
 
     function handleChange(event) {
@@ -22,11 +23,14 @@ export default function Form() {
         })
     }
 
-    console.log(formData)
+    function handleSubmit(event) {
+        event.preventDefault();
+        console.log(formData)
+    }
     
 
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <input
                 type="text"
                 name="firstName"
@@ -101,7 +105,23 @@ export default function Form() {
                 <label htmlFor="full-time">Full time</label>
                 <br />
             </fieldset>
-            
+
+            <select 
+                id="favColor"
+                value={formData.favColor}
+                onChange={handleChange}
+                name="favColor"
+            >
+                <option value=''>-- Choose --</option>
+                <option value='red'>Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="indigo">Indigo</option>
+                <option value="violet">Violet</option>
+            </select>
+            <button>Send it in</button>
         </form>
     )
 }
