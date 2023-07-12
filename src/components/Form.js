@@ -105,7 +105,10 @@ export default function Form() {
                 <label htmlFor="full-time">Full time</label>
                 <br />
             </fieldset>
+            
+            <br />
 
+            <label htmlFor="favColor">What is your favorite color?</label>
             <select 
                 id="favColor"
                 value={formData.favColor}
@@ -121,6 +124,7 @@ export default function Form() {
                 <option value="indigo">Indigo</option>
                 <option value="violet">Violet</option>
             </select>
+            <br />
             <button>Send it in</button>
         </form>
     )
